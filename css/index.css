@@ -1,0 +1,98 @@
+#introduction{
+    animation: fade-up 0.9s;
+}
+
+.introduction-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2% 3% 2% 3%;
+}
+.left-itext h2{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-family: MediumFONT;
+}
+.right-itext a{
+    position: relative;
+    padding:10px 6px 10px 15px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: MediumFONT;
+    color: var(--primary-color);
+    transition: .2s;
+    padding: 0 10px;
+}
+
+.right-itext a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.right-itext a:hover::after{
+    width: 100%;
+}
+
+.right-itext i{
+    color: var(--primary-color);
+}
+.right-itext a:hover{
+    color: rgb(190, 187, 187);
+    
+}
+
+.team-03{
+    border: 5px solid;
+    border-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    color: var(--primary-color);
+
+}
+.team-03 h1{
+    font-family: MediumFONT;
+    font-size: 50px;
+    animation: fade-down 0.9s;
+}
+body{
+    background-image: url('../media/background2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: .5s;
+}
+
+.logo-box{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+}
+
+.logo-box img{
+    width: 100%;
+    border: 3px solid var(--primary-color)
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color: #fff;
+}
+
+.dark-theme{
+    --primary-color: #fff;
+    --secondary-color: black;
+    background-image: url('../media/a057afe4ded4705c350f58f5be2521af\ \(2\)_LE_auto_x2.jpg');
+    transition: .5s;
+}

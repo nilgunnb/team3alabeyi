@@ -1,0 +1,226 @@
+#introduction{
+    animation: fade-up 0.9s;
+}
+
+.introduction-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2% 3% 2% 3%;
+}
+.left-itext h2{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-family: MediumFONT;
+}
+.right-itext a{
+    position: relative;
+    padding:10px 6px 10px 15px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: MediumFONT;
+    color: var(--primary-color);
+    transition: .2s;
+    padding: 0 10px;
+}
+
+.right-itext a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.right-itext a:hover::after{
+    width: 100%;
+}
+
+.right-itext i{
+    color: var(--primary-color);
+}
+.right-itext a:hover{
+    color: var(--hover-color);
+    
+}
+
+body{
+    background-image: url('../media/circle.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: .5s;
+}
+
+:root{
+    --overlay-color: #6f92bd;
+    --primary-color: #2f4259 !important;
+    --secondary-color: #fff;
+    --tabmenu-color: #597fad;
+    --third-color: #1d2937;
+    --hover-color: #5e83b1;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+#hourcode{
+    animation: fade-down 0.9s;
+}
+
+.tabmenu{
+    margin: 4rem auto;
+    border:1px solid  var(--primary-color);
+    width: 40%;
+    padding: 20px;
+    background-color: var(--tabmenu-color);
+    border-radius: 10px;
+    height: 410px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.links button{
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid #b8b7b7;
+    background: var(--secondary-color);
+    color: #7E7E7E;
+    padding: 13px 40px;
+    font-family: MediumFONT;
+    transition: .6s;
+}
+
+.links button:hover{
+    border: 1px solid var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.active{
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    border: 1px solid  var(--third-color)!important;
+}
+
+.content{
+    padding: 20px;
+    animation: fade-up 0.9s;
+}
+
+.content p{
+    font-size: 20px;
+    font-family: MediumFONT;
+    color: #fff;
+}
+
+.d-none{
+    display: none;
+}
+
+.links2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links2 button{
+    font-size: 15px;
+    border-radius: 30px;
+    border: 1px solid #b8b7b7;
+    background: var(--secondary-color);
+    color: #7E7E7E;
+    padding: 9px 20px;
+    font-family: MediumFONT;
+    transition: .6s;
+}
+
+.links2 button:hover{
+    border: 1px solid var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.active2{
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    border: 1px solid  var(--third-color)!important;
+}
+
+.content2{
+    padding: 20px;
+    animation: fade-down 0.9s;
+}
+
+.content2 p{
+    font-size: 15px;
+    font-family: MediumFONT;
+    color: #fff;
+}
+
+.slider{
+    position: relative;
+
+}
+
+.slider-image{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.slider-image img{
+    width: 100%;
+    border-radius: 20px;
+    user-select: none;
+}
+
+.next,.prev{
+    position: absolute;
+    top: 50%;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    padding: 9px 14px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: #7E7E7E;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .5s;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+
+.prev:hover{
+    background-color: var(--third-color) !important;
+    color: #fff;
+}
+
+.next:hover{
+    background-color: var(--third-color) !important;
+    color: #fff;
+}
+
+.dark-theme{
+    background-image: url('../media/purple.jpg');
+    --overlay-color: #181f27;
+    --primary-color: #7937f2 !important;
+    --hover-color: #b38ff7;
+    --tabmenu-color: #240f49;
+    --third-color: #411c86;
+    transition: .5s;
+}

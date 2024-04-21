@@ -1,0 +1,147 @@
+.members-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2% 3% 2% 3%;
+}
+.left-mtext h2{
+    color: var(--nav-color);
+    font-size: 30px;
+    font-family: MediumFONT;
+}
+.right-mtext a{
+    position: relative;
+    padding:10px 6px 10px 15px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-family: MediumFONT;
+    color: var(--nav-color);
+    transition: .2s;
+    padding: 0 10px;
+}
+
+#members{
+    animation: fade-up 0.9s;
+}
+
+.right-mtext i{
+    color: var(--nav-color) !important;
+}
+
+.right-mtext a::after{
+    content: '';
+    position: absolute;
+    background-color: var(--nav-color);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.right-mtext a:hover::after{
+    width: 100%;
+}
+
+.right-mtext i{
+    color: var(--primary-color);
+}
+.right-mtext a:hover{
+    color: var(--hnav-color); 
+}
+
+:root{
+    --tabmenu-color: #465d46;
+    --hnav-color: #2d552d;
+    --nav-color: #1d351d !important;
+    --primary-color: #1d351d !important;
+    --secondary-color: #fff;
+    --third-color: #122212;
+    --overlay-color: rgb(109 109 109 / 70%);
+}
+
+body{
+    background-image: url('../media/hands.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: .5s;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    z-index: -1;
+}
+
+#about-us{
+    animation: fade-down 0.9s;
+}
+
+.tabmenu{
+    margin: 4rem auto;
+    border:1px solid  var(--primary-color);
+    width: 40%;
+    padding: 20px;
+    background-color: var(--tabmenu-color);
+    border-radius: 10px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links button{
+    font-size: 20px;
+    border-radius: 30px;
+    border: 1px solid #b8b7b7;
+    background: var(--secondary-color);
+    color: #7E7E7E;
+    padding: 13px 40px;
+    font-family: MediumFONT;
+    transition: .6s;
+}
+
+.links button:hover{
+    border: 1px solid var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.active{
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+    border: 1px solid  var(--third-color)!important;
+}
+
+.content{
+    padding: 20px;
+    animation: fade-up 0.9s;
+}
+
+.content p{
+    font-size: 20px;
+    font-family: MediumFONT;
+    color: #fff;
+}
+
+.d-none{
+    display: none;
+}
+
+
+.dark-theme{
+    --tabmenu-color: #585858; 
+    --hnav-color: #b8b2b2;
+    --nav-color: #fff;
+    --primary-color: black;
+    --secondary-color: #fff;
+    --overlay-color: rgb(29 27 27 / 70%);
+    background-image: url('../media/building.jpg');
+    transition: .5s;
+}
